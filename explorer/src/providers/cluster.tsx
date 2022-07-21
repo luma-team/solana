@@ -65,7 +65,8 @@ export function clusterUrl(cluster: Cluster, customUrl: string): string {
     case Cluster.Devnet:
       return DEVNET_URL.replace("api", "explorer-api");
     case Cluster.MainnetBeta:
-      return MAINNET_BETA_URL.replace("api", "explorer-api");
+      return "https://glow-backend.rpcpool.com/b22c84c20d80191caaae7470ce5e";
+    // return MAINNET_BETA_URL.replace("api", "explorer-api");
     case Cluster.Testnet:
       return TESTNET_URL.replace("api", "explorer-api");
     case Cluster.Custom:
